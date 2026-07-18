@@ -46,12 +46,8 @@ def _recommendation(band: str) -> str:
             "Prepare a bounded implementation plan with named owners, controls, "
             "success measures, and verification."
         ),
-        "CONDITIONAL": (
-            "Proceed only after named gaps are resolved or explicitly constrained."
-        ),
-        "DISCOVERY": (
-            "Limit work to discovery, evidence collection, or prototype validation."
-        ),
+        "CONDITIONAL": ("Proceed only after named gaps are resolved or explicitly constrained."),
+        "DISCOVERY": ("Limit work to discovery, evidence collection, or prototype validation."),
         "NOT READY": (
             "Do not begin implementation. Resolve foundational business, data, "
             "oversight, governance, or evidence gaps first."
@@ -92,9 +88,7 @@ def score_assessment(payload: dict[str, Any]) -> DiagnosticResult:
 
         if bool(config["critical"]) and score < 2:
             critical_floor_triggered = True
-            warnings.append(
-                f"{config['label']}: critical score below 2 prevents READY status"
-            )
+            warnings.append(f"{config['label']}: critical score below 2 prevents READY status")
 
         dimension_results.append(
             {

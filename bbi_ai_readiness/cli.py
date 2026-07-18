@@ -2,17 +2,15 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 import sys
+from pathlib import Path
 
 from .reporting import render_markdown
 from .scoring import score_assessment
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
-        description="Score an evidence-first AI readiness assessment."
-    )
+    parser = argparse.ArgumentParser(description="Score an evidence-first AI readiness assessment.")
     parser.add_argument("assessment", type=Path, help="Path to an assessment JSON file")
     parser.add_argument("--output", type=Path, help="Optional Markdown output path")
     return parser

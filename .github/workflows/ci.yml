@@ -10,6 +10,49 @@ permissions:
   contents: read
 
 jobs:
+  quality:
+    name: quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install tooling
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ruff mypy pytest pytest-cov
+      - name: Ruff check
+        run: python -m ruff check bbi_ai_readiness tests
+      - name: Ruff format check
+        run: python -m ruff format --check bbi_ai_readiness tests
+      - name: Static typing
+        run: python -m mypy bbi_ai_readiness
+      - name: Pytest with coverage
+        run: |
+          python -m pytest tests -v \
+            --cov=bbi_ai_readiness \
+            --cov-report=term-missing \
+            --cov-fail-under=80
+      - name: CLI integration
+        run: |
+          python -m bbi_ai_readiness.cli examples/sample-assessment.json
+          python -m bbi_ai_readiness.cli examples/sample-assessment.json --output readiness-report.md
+          test -s readiness-report.md
+      - name: Documentation validation
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f SECURITY.md
+          test -f CONTRIBUTING.md
+          test -f SUPPORT.md
+          test -f CODE_OF_CONDUCT.md
+          test -f PUBLIC_PROOF_GATE.md
+          test -f docs/governance/merge-policy.md
+          test -f docs/governance/release-policy.md
+          test -f docs/governance/security-model.md
+          test -f docs/releases/v0.1.0.md
+
   test:
     runs-on: ubuntu-latest
     strategy:

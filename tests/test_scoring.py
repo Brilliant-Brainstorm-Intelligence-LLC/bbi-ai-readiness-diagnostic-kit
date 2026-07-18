@@ -1,19 +1,8 @@
 import unittest
 
+from helpers import valid_payload
+
 from bbi_ai_readiness.scoring import score_assessment
-
-
-def valid_payload(score: int = 4):
-    return {
-        "dimensions": {
-            "business_value": {"score": score, "evidence": ["evidence"]},
-            "data_readiness": {"score": score, "evidence": ["evidence"]},
-            "human_oversight": {"score": score, "evidence": ["evidence"]},
-            "risk_governance": {"score": score, "evidence": ["evidence"]},
-            "delivery_readiness": {"score": score, "evidence": ["evidence"]},
-            "evidence_quality": {"score": score, "evidence": ["evidence"]},
-        }
-    }
 
 
 class ScoringTests(unittest.TestCase):
