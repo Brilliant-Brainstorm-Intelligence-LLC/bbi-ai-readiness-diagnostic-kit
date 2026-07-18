@@ -1,6 +1,8 @@
-# BBI AI Readiness Diagnostic Kit
+﻿# BBI AI Readiness Diagnostic Kit
 
 [![CI](https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/Tmgilliam/bbi-ai-readiness-diagnostic-kit)](https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit/releases)
 
 An evidence-first starter toolkit for evaluating whether an organization is ready to pursue a specific AI use case.
 
@@ -108,9 +110,9 @@ See [`PUBLIC_PROOF_GATE.md`](PUBLIC_PROOF_GATE.md).
 - [x] Example assessment
 - [x] Unit tests
 - [x] GitHub Actions CI
-- [ ] License decision
-- [ ] First tagged release
-- [ ] Screenshot or short demo
+- [x] License decision (Apache-2.0)
+- [x] First tagged release
+- [x] Social preview image
 
 ### v0.2
 
@@ -131,6 +133,10 @@ It does not:
 - connect to private BBIOS data,
 - make automated approval decisions,
 - claim that a score is live operational telemetry.
+
+## License
+
+The software in this repository is licensed under the Apache License 2.0. See [`LICENSE`](LICENSE).
 
 ## Maintainer
 
