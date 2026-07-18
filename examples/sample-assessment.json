@@ -1,0 +1,55 @@
+{
+  "assessment_title": "Sample Distributor AI Readiness Diagnostic",
+  "organization": "Example Distribution Company",
+  "use_case": "Predict late customer-order fulfillment",
+  "dimensions": {
+    "business_value": {
+      "score": 4,
+      "evidence": [
+        "Late orders are reviewed weekly by operations leadership",
+        "The organization has defined an on-time fulfillment KPI"
+      ],
+      "notes": "The decision owner is identified, but the target improvement is not yet approved."
+    },
+    "data_readiness": {
+      "score": 3,
+      "evidence": [
+        "Two years of order-header and fulfillment-event history are available",
+        "Order identifiers can be joined across the source systems"
+      ],
+      "notes": "Reason-code completeness varies by site."
+    },
+    "human_oversight": {
+      "score": 4,
+      "evidence": [
+        "Operations managers retain authority over interventions",
+        "The proposed output is advisory rather than autonomous"
+      ],
+      "notes": ""
+    },
+    "risk_governance": {
+      "score": 3,
+      "evidence": [
+        "The use case excludes employment and customer-credit decisions",
+        "A named owner will review false-positive impacts"
+      ],
+      "notes": "A formal rollback criterion still needs approval."
+    },
+    "delivery_readiness": {
+      "score": 3,
+      "evidence": [
+        "A sandbox environment is available",
+        "A data engineer has been assigned for discovery"
+      ],
+      "notes": "Production monitoring ownership is not assigned."
+    },
+    "evidence_quality": {
+      "score": 3,
+      "evidence": [
+        "Data-volume estimates were checked against source extracts",
+        "Known missing fields are documented"
+      ],
+      "notes": "No baseline model or decision-impact benchmark exists yet."
+    }
+  }
+}

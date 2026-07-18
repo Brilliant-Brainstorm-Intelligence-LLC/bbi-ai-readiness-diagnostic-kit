@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbi-ai-readiness-diagnostic-kit"
+version = "0.1.0"
+description = "Evidence-first AI readiness diagnostic toolkit"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  {name = "Dr. Tatianna Gilliam"}
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+bbi-ai-readiness = "bbi_ai_readiness.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bbi_ai_readiness*"]
