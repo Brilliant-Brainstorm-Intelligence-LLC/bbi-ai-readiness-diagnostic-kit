@@ -6,3 +6,10 @@ venv/
 *.md.tmp
 readiness-report.md
 .DS_Store
+
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+
