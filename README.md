@@ -1,8 +1,8 @@
-﻿# BBI AI Readiness Diagnostic Kit
+# BBI AI Readiness Diagnostic Kit
 
-[![CI](https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit/actions/workflows/ci.yml)
+[![CI](https://github.com/Brilliant-Brainstorm-Intelligence-LLC/bbi-ai-readiness-diagnostic-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/Brilliant-Brainstorm-Intelligence-LLC/bbi-ai-readiness-diagnostic-kit/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/Tmgilliam/bbi-ai-readiness-diagnostic-kit)](https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit/releases)
+[![Release](https://img.shields.io/github/v/release/Brilliant-Brainstorm-Intelligence-LLC/bbi-ai-readiness-diagnostic-kit)](https://github.com/Brilliant-Brainstorm-Intelligence-LLC/bbi-ai-readiness-diagnostic-kit/releases)
 
 An evidence-first starter toolkit for evaluating whether an organization is ready to pursue a specific AI use case.
 

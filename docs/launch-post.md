@@ -1,4 +1,4 @@
-﻿# Launch Post — BBI AI Readiness Diagnostic Kit v0.1.0
+# Launch Post — BBI AI Readiness Diagnostic Kit v0.1.0
 
 I've released the first public version of the **BBI AI Readiness Diagnostic Kit**.
 
@@ -34,7 +34,7 @@ The v0.1.0 release includes:
 This is not a compliance certification or automated approval system. It is an evidence-first decision aid designed to improve the quality of the conversation before organizations build.
 
 Repository:
-https://github.com/Tmgilliam/bbi-ai-readiness-diagnostic-kit
+https://github.com/Brilliant-Brainstorm-Intelligence-LLC/bbi-ai-readiness-diagnostic-kit
 
 Feedback, issues, and thoughtful contributions are welcome.
 
